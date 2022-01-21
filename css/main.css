@@ -14,13 +14,13 @@
 }
 
 /*링크를 글자처럼 보임
-추후 실제 링크로 업데이트 가능*/
+추후 실제 링크로 업데이트 가능
 #logo a:link,
 #logo a:visited {
   display: block;
   text-decoration: none;
   color: black;
-}
+}*/
 
 #face {
   text-align: center;
@@ -54,6 +54,7 @@ input {
 input:hover,
 input:focus {
   border: 0px solid rgb(255, 255, 255);
+  outline-style: none;
 }
 
 article ul {

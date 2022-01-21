@@ -1,0 +1,46 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+i {
+  font-size: 90pt;
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+li {
+  width: 600px;
+  height: 900px;
+  margin: 0 10px;
+  list-style: none;
+  display: inline-block;
+  float: left;
+}
+
+.subheading {
+  margin: 20px 5px;
+  display: inline-block;
+  float: left;
+}
+
+#running {
+  float: left;
+}
+
+#record {
+  margin: 20px 200px 0 50px;
+  clear: left;
+}
+
+#camera {
+  float: left;
+}
+
+#desk {
+  margin: 20px 200px 0 50px;
+  clear: left;
+}
