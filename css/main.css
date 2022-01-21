@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+#logo {
+  text-align: center;
+  font-size: 40pt;
+  font-weight: 200;
+  margin: 50px;
+}
+
+/*링크를 글자처럼 보임
+추후 실제 링크로 업데이트 가능*/
+#logo a:link,
+#logo a:visited {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+#face {
+  text-align: center;
+}
+
+#question {
+  text-align: center;
+  font-size: 40pt;
+  font-weight: 500;
+  margin: 50px;
+}
+
+form {
+  padding: 0 0 80px 300px;
+  font-size: 30pt;
+}
+
+#message {
+  width: 800px;
+  height: 200px;
+}
+
+input {
+  border: none;
+  border-radius: 0px;
+  font-size: 30pt;
+  width: 580px;
+  height: 50px;
+}
+
+input:hover,
+input:focus {
+  border: 0px solid rgb(255, 255, 255);
+}
+
+article ul {
+  list-style: none;
+  text-align: center;
+}
+
+article ul li {
+  display: inline-block;
+  border: none;
+  padding: 50px 100px 0 100px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/greet.ico" sizes="16x16" />
+    <title>Intoroduce Myself - LJH</title>
+  </head>
+  <body>
+    <header id="logo">
+      <a href="#">Hello, I'm <b>JiHwan</b></a>
+    </header>
+
+    <figure id="face">
+      <img src="images/greet.png" alt="환영인사" />
+    </figure>
+
+    <div id="question">What's your name?</div>
+
+    <main>
+      <form id="message">
+        >
+        <label
+          ><input
+            type="text"
+            id="name"
+            autofocus
+            placeholder=" Insert your name & Press enter"
+            onkeyup="if(event.keyCode == 13){printName();}else{setName()}"
+          />
+
+          <div id="result">&nbsp</div>
+
+          <script>
+            var name;
+
+            function setName() {
+              name = document.getElementById("name").value;
+            }
+
+            function printName() {
+              document.getElementById("result").innerHTML =
+                "> Hello, " + name + "!" + "<br>" + "> Click the icons below!";
+            }
+          </script>
+        </label>
+      </form>
+
+      <article>
+        <ul>
+          <li>
+            <a href="aboutMe.html" target="_blank">
+              <img src="images/computer.png" alt="상세정보" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/good.png" alt="상세정보" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/bad.png" alt="상세정보" />
+            </a>
+          </li>
+        </ul>
+      </article>
+    </main>
+  </body>
+</html>
