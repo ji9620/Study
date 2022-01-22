@@ -1,3 +1,7 @@
+<!-- 
+  중앙의 텍스트 박스에 영문 이름을 입력하면, 인사합니다.
+  세 개의 페이지 중 두 개가 동작합니다.
+-->
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -7,50 +11,65 @@
     <title>Intoroduce Myself - LJH</title>
   </head>
   <body>
-    <header id="logo">Hello, I'm <b>JiHwan</b></header>
+    <!-- 화면 최상단에 나오는 글자입니다.-->
+    <header class="logo">
+      Hello, I'm <b>JiHwan</b>
 
-    <figure id="face">
-      <img src="images/greet.png" alt="환영인사" />
-    </figure>
-
-    <div id="question">What's your name?</div>
+      <!-- 중앙 위쪽의 이미지입니다.-->
+      <figure class="cards__card--logo">
+        <img src="images/greet.png" alt="환영인사" />
+      </figure>
+    </header>
 
     <main>
-      <form id="message">
-        >
-        <label
-          ><input
-            type="text"
-            id="name"
-            autofocus
-            placeholder="Insert your name & Press enter"
-          />
+      <section>
+        <!-- 중앙 섹션 내부의 질문입니다.-->
+        <article class="question">
+          What's your name?
 
-          <div id="result">&nbsp</div>
+          <!-- 질문에 대한 답을 입력합니다.
+                커서가 autofocus되며 영문 이름 입력시 텍스트가 나타납니다.-->
+          <form class="question--input">
+            >
+            <label
+              ><input
+                type="text"
+                id="name"
+                autofocus
+                placeholder="Insert your name & Press enter"
+              />
 
-          <script src="js/main.js"></script>
-        </label>
-      </form>
+              <!-- 질문에 대한 답을 입력받으면, 
+                    result에 문자열을 반환하여 화면에 출력합니다.-->
+              <div id="result" class="question--input__align-left">&nbsp</div>
 
-      <article>
-        <ul>
-          <li>
-            <a href="aboutMe.html" target="_blank">
-              <img src="images/computer.png" alt="상세정보" />
-            </a>
-          </li>
-          <li>
-            <a href="favorite.html" target="_blank">
-              <img src="images/good.png" alt="상세정보" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/bad.png" alt="상세정보" />
-            </a>
-          </li>
-        </ul>
-      </article>
+              <script src="js/main.js"></script>
+            </label>
+          </form>
+        </article>
+
+        <!-- 이미지 세 개를 클릭하면, 다른 html로 이동합니다.-->
+        <article>
+          <!-- cards는 card들로 이루어져 있습니다.-->
+          <ul class="cards">
+            <li class="cards__card">
+              <a href="aboutMe.html" target="_blank">
+                <img src="images/computer.png" alt="상세정보" />
+              </a>
+            </li>
+            <li class="cards__card">
+              <a href="favorite.html" target="_blank">
+                <img src="images/good.png" alt="상세정보" />
+              </a>
+            </li>
+            <li class="cards__card">
+              <a href="temp.html" target="_blank">
+                <img src="images/bad.png" alt="상세정보" />
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
     </main>
   </body>
 </html>
