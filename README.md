@@ -31,7 +31,7 @@
 메인 페이지 하단의 두번째 이미지를 클릭하면 이 html이 새 창에서 열립니다.
 좋아하는 것들을 넣었습니다.
 ```
-![myFavoritePage](https://user-images.githubusercontent.com/63586236/150637477-f68efdf4-5033-4390-bf88-c32dc74f5cac.png)
+![myfavoritePage2](https://user-images.githubusercontent.com/63586236/150637524-378c2735-2096-4f3a-9eca-15f52782dc5d.png)
 -------------------------------------
 
 ~~2022.01.22 &nbsp; 02:48 &emsp; 내일 오후 중으로 세 번째 페이지를 추가하고 코드에 대한 설명을 추가하겠습니다.~~<br>
